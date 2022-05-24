@@ -10,7 +10,7 @@
 
 - name: Remove client csr
   file:
-    path: "{{ openvpn_key_dir }}/{{ item }}.csr"
+    path: "{{ openvpn_key_dir }}/{{ item }}.crt"
     state: absent
     force: true
   with_items:
